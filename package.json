@@ -1,0 +1,10 @@
+{
+  "name": "bracfileshare",
+  "version": "0.0.1",
+  "description": "A simple file sharing application for brac uganda",
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": "Michael Ntambazi"
+}
