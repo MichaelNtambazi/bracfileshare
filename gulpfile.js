@@ -2,10 +2,11 @@
  * Created by michaelntambazi on 03/11/15.
  */
 // Bring in the gulp library(All methods and properties) and assign it to the variable gulp
-var gulp    = require('gulp'),
-    gutil   = require('gulp-util'),
-    coffee  = require('gulp-coffee'),
-    concat  = require('gulp-concat');
+var gulp        = require('gulp'),
+    gutil       = require('gulp-util'),
+    coffee      = require('gulp-coffee'),
+    concat      = require('gulp-concat'),
+    browserify  = require('gulp-browserify');
 
 var jsSources = [
     'components/scripts/app.js'
@@ -17,6 +18,7 @@ gulp.task('js', function() {
     gulp.src(jsSources)
         // concatenate all of them into one script file
         .pipe(concat('script.js'))
+        .pipe(browserify())
         // Which resides in this destination 'builds/development/js'
         .pipe(gulp.dest('builds/development/js'))
 });
