@@ -4,7 +4,7 @@
   "description": "A simple file sharing application for brac uganda",
   "repository": {
     "type": "git",
-    "url": "?.git"
+    "url": "https://github.com/MichaelNtambazi/bracfileshare.git"
   },
   "author": "Michael Ntambazi",
   "devDependencies": {
